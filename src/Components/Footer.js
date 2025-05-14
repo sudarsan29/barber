@@ -1,5 +1,4 @@
 import React from 'react';
-import { FaMapMarkerAlt } from 'react-icons/fa';
 
 const Footer = () => {
   return (
@@ -23,7 +22,6 @@ const Footer = () => {
         <div className="space-y-2 flex flex-col items-center lg:items-center">
           <h3 className="font-bold text-lg">Contact Us</h3>
           <div className="flex items-center justify-center text-white space-x-2">
-            <FaMapMarkerAlt className="text-white" />
             <p className="text-yellow-400">518 Acme St unit 101</p>
           </div>
           <p className="text-yellow-400">Denton, TX 76205, United States</p>
