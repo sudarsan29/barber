@@ -77,9 +77,12 @@ const Price = () => {
                   </li>
                 ))}
               </ul>
-              <button className="bg-yellow-500 hover:bg-yellow-600 text-black font-semibold py-2 px-6 rounded-full transition duration-300">
+              <a
+                href="#booknow" // Navigate to Book Now section
+                className="bg-yellow-500 hover:bg-yellow-600 text-black font-semibold py-2 px-6 rounded-full transition duration-300"
+              >
                 {plan.cta}
-              </button>
+              </a>
             </div>
           ))}
         </div>
@@ -89,4 +92,3 @@ const Price = () => {
 };
 
 export default Price;
-

@@ -1,4 +1,3 @@
-// src/components/Services.js
 import React from 'react';
 
 const services = [
@@ -36,22 +35,32 @@ const services = [
 
 const Services = () => {
   return (
-    <section id="services" className="py-16 bg-brown">
+    <section id="services" className="py-16 bg-white">
       <div className="max-w-7xl mx-auto px-4 text-center">
         <h2 className="text-3xl font-bold text-gray-800 mb-12">Our Services</h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
           {services.map((service, index) => (
             <div
               key={index}
-              className="border-4 border-black-400 hover:border-yellow-600 bg-gray-100 hover:bg-yellow-100 p-6 rounded-lg shadow-lg transition duration-300 ease-in-out transform hover:scale-105"
+              className="border border-black hover:border-black bg-gray-100 p-6 rounded-lg shadow-md transition duration-300"
             >
-              <img
-                src={service.image}
-                alt={service.title}
-                className="w-full h-40 object-cover rounded-md mb-4"
-              />
+              <div className="overflow-hidden rounded-md mb-4">
+                <img
+                  src={service.image}
+                  alt={service.title}
+                  className="w-full h-40 object-cover transform transition-transform duration-300 hover:scale-110"
+                />
+              </div>
               <h3 className="text-xl font-semibold text-gray-800 mb-2">{service.title}</h3>
               <p className="text-gray-600">{service.description}</p>
+
+              {/* Book Now Button */}
+              <a
+                href="#booknow" // Use the anchor tag to navigate to the Book Now section
+                className="mt-4 inline-block bg-yellow-500 text-black py-2 px-6 rounded-full text-lg font-semibold transition duration-300 hover:bg-yellow-400 hover:text-white"
+              >
+                Book Now
+              </a>
             </div>
           ))}
         </div>

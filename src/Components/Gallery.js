@@ -1,4 +1,3 @@
-// src/components/Gallery.js
 import React from "react";
 
 const Gallery = () => {
@@ -16,29 +15,29 @@ const Gallery = () => {
         {/* Image Section */}
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
           {/* Image Card 1 */}
-          <div className="overflow-hidden rounded-lg shadow-lg transform transition duration-300 hover:scale-105">
+          <div className="overflow-hidden rounded-lg shadow-lg transform transition duration-300 hover:scale-105 hover:shadow-xl">
             <img
               src="/haircut-progress.jpeg"
               alt="Client haircut in progress"
-              className="w-full h-auto object-cover"
+              className="w-full h-64 sm:h-72 object-cover rounded-xl"
             />
           </div>
 
           {/* Image Card 2 */}
-          <div className="overflow-hidden rounded-lg shadow-lg transform transition duration-300 hover:scale-105">
+          <div className="overflow-hidden rounded-lg shadow-lg transform transition duration-300 hover:scale-105 hover:shadow-xl">
             <img
               src="/interiors.jpg"
               alt="Barbershop interior design"
-              className="w-full h-auto object-cover"
+              className="w-full h-64 sm:h-72 object-cover rounded-xl"
             />
           </div>
 
           {/* Image Card 3 */}
-          <div className="overflow-hidden rounded-lg shadow-lg transform transition duration-300 hover:scale-105">
+          <div className="overflow-hidden rounded-lg shadow-lg transform transition duration-300 hover:scale-105 hover:shadow-xl">
             <img
               src="/happy.jpeg"
               alt="Happy customer after haircut"
-              className="w-full h-auto object-cover"
+              className="w-full sm:w-auto md:w-full h-64 sm:h-72 object-cover rounded-xl"
             />
           </div>
         </div>

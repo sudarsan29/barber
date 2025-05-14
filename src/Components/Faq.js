@@ -55,13 +55,6 @@ const Faq = () => {
           Answers to common questions about our barbershop services.
         </p>
 
-        {/* Search */}
-        <input
-          type="text"
-          placeholder="Search for questions..."
-          className="w-full mb-6 px-4 py-2 rounded-md bg-white text-black border border-yellow-500 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-yellow-500"
-        />
-
         {/* Category Tabs */}
         <div className="flex justify-center flex-wrap gap-4 mb-10">
           {categories.map((cat) => (

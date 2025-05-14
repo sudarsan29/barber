@@ -8,20 +8,25 @@ import Contact from './Components/Contact';
 import Footer from './Components/Footer';
 import Faq from './Components/Faq'
 import Price from './Components/Price'
+import BookNow from './Components/BookNow'
 
 function App() {
   return (
-    <MotionConfig reducedMotion="user">
+    <div className='pt-16'>
+      <MotionConfig reducedMotion="user">
       <Navbar />
       <Hero /> 
       <About />
       <Service />
       <Gallery />
       <Price />
+      <BookNow />
       <Faq />
       <Contact /> 
       <Footer />
     </MotionConfig>
+    </div>
+    
   );
 }
 
