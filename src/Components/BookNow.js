@@ -31,19 +31,19 @@ const BookNow = () => {
   };
 
   return (
-    <section id="booknow" className="py-16 bg-gray-100">
+    <section id="booknow" className="py-16  bg-gradient-to-br from-black via-gray-900 to-black">
       <div className="max-w-6xl mx-auto text-center">
-        <h2 className="text-4xl font-semibold text-gray-800 mb-6">Book Your Appointment</h2>
-        <p className="text-xl text-gray-600 mb-10">
+        <h2 className="text-4xl font-semibold text-yellow-500 mb-6">Book Your Appointment</h2>
+        <p className="text-xl text-gray-300 mb-10">
           Ready for a fresh cut? Fill out the form below to schedule your appointment!
         </p>
 
         {/* Appointment Booking Form */}
-        <div className="bg-white p-8 rounded-lg shadow-lg max-w-lg mx-auto">
+        <div className="dark:bg-gray-800 p-8 rounded-lg shadow-lg max-w-lg mx-auto">
           <form onSubmit={handleSubmit} className="space-y-6">
             {/* Name Input */}
             <div>
-              <label htmlFor="name" className="block text-lg font-medium text-gray-700 mb-2">
+              <label htmlFor="name" className="block text-lg font-medium text-white-700 mb-2">
                 Your Name
               </label>
               <input
@@ -60,7 +60,7 @@ const BookNow = () => {
 
             {/* Phone Input */}
             <div>
-              <label htmlFor="phone" className="block text-lg font-medium text-gray-700 mb-2">
+              <label htmlFor="phone" className="block text-lg font-medium text-white-700 mb-2">
                 Phone Number
               </label>
               <input
@@ -77,7 +77,7 @@ const BookNow = () => {
 
             {/* Date Input */}
             <div>
-              <label htmlFor="date" className="block text-lg font-medium text-gray-700 mb-2">
+              <label htmlFor="date" className="block text-lg font-medium text-white-700 mb-2">
                 Appointment Date
               </label>
               <input
@@ -93,7 +93,7 @@ const BookNow = () => {
 
             {/* Time Input */}
             <div>
-              <label htmlFor="time" className="block text-lg font-medium text-gray-700 mb-2">
+              <label htmlFor="time" className="block text-lg font-medium text-white-700 mb-2">
                 Appointment Time
               </label>
               <input
@@ -109,7 +109,7 @@ const BookNow = () => {
 
             {/* Service Dropdown */}
             <div>
-              <label htmlFor="service" className="block text-lg font-medium text-gray-700 mb-2">
+              <label htmlFor="service" className="block text-lg font-medium text-white-700 mb-2">
                 Select Service
               </label>
               <select

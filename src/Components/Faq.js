@@ -47,24 +47,24 @@ const Faq = () => {
   };
 
   return (
-    <section id="faq" className="py-16 bg-white text-black min-h-screen">
+    <section id="faq" className="py-16  bg-gradient-to-br from-black via-gray-900 to-black min-h-screen">
       <div className="max-w-5xl mx-auto px-4">
         {/* Title */}
-        <h2 className="text-4xl font-bold text-center mb-4">Common Questions</h2>
-        <p className="text-center text-gray-600 text-lg mb-8">
+        <h2 className="text-4xl font-bold text-yellow-500 text-center mb-4">Common Questions</h2>
+        <p className="text-center text-gray-300 text-lg mb-8">
           Answers to common questions about our barbershop services.
         </p>
 
         {/* Category Tabs */}
-        <div className="flex justify-center flex-wrap gap-4 mb-10">
+        <div className="flex justify-center flex-wrap text-grey-300 gap-4 mb-10">
           {categories.map((cat) => (
             <button
               key={cat}
               onClick={() => setActiveCategory(cat)}
-              className={`px-4 py-2 rounded-full text-sm font-semibold border transition duration-300 ${
+              className={`px-4 py-2 rounded-full bg-grey-300 text-grey-300 text-sm font-semibold border transition duration-300 ${
                 activeCategory === cat
-                  ? "bg-yellow-500 text-black"
-                  : "border-yellow-500 text-black hover:bg-yellow-500"
+                  ? "bg-yellow-500 text-grey-300"
+                  : "border-yellow-500 text-grey hover:bg-yellow-500"
               }`}
             >
               {cat}
@@ -77,7 +77,7 @@ const Faq = () => {
           {filteredFaqs.map((faq, index) => (
             <div
               key={index}
-              className="bg-white rounded-xl p-4 border border-yellow-500 transition duration-300"
+              className="bg-white text-gray-900 rounded-xl p-4 border border-yellow-500 transition duration-300"
             >
               <button
                 onClick={() => toggleQuestion(index)}

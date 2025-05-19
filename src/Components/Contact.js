@@ -46,9 +46,9 @@ const Contact = () => {
   };
 
   return (
-    <section id="contact" className="py-16 bg-grey-400 min-h-screen">
+    <section id="contact" className="py-16  bg-gradient-to-br from-black via-gray-900 to-black min-h-screen">
       <div className="max-w-7xl mx-auto text-center px-4">
-        <h2 className="text-3xl font-bold text-black mb-6">Contact Us</h2>
+        <h2 className="text-3xl font-bold text-yellow-500 mb-6">Contact Us</h2>
 
         <motion.form
           onSubmit={handleSubmit}

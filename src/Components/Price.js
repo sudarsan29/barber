@@ -47,12 +47,12 @@ const pricingPlans = [
 
 const Price = () => {
   return (
-    <section id="pricing" className="py-20 bg-white">
+    <section id="pricing" className="py-20  bg-gradient-to-br from-black via-gray-900 to-black">
       <div className="max-w-7xl mx-auto px-4 text-center">
         <h2 className="text-4xl font-bold text-yellow-500 mb-4">
           Quality Barbering at Fair Prices
         </h2>
-        <p className="text-xl text-yellow-400 mb-12">
+        <p className="text-xl text-grey-400 mb-12">
           Choose from our range of professional barbering services.
         </p>
 

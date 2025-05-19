@@ -1,3 +1,24 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* Theme background overrides */
+body.theme-black {
+  background-color: #0f0f0f;
+  color: white;
+}
+
+body.theme-white {
+  background-color: #f9f9f9;
+  color: black;
+}
+
+body.theme-blue {
+  background-color: #0a2540;
+  color: white;
+}
+
+* {
+  transition: background-color 0.5s ease, color 0.5s ease;
+}
+
