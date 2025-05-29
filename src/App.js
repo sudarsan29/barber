@@ -40,8 +40,8 @@ function App() {
     <div className={`pt-16 min-h-screen transition-all duration-500 ${getThemeClass()}`}>
       <MotionConfig reducedMotion="user">
         <Navbar onThemeChange={handleThemeChange} onLanguageChange={handleLanguageChange} />
-        <Hero />
         <Empty />
+        <Hero />
         <About />
         <Service />
         <Gallery />
