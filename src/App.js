@@ -13,6 +13,7 @@ import Faq from './Components/Faq';
 import Ready from './Components/Ready'
 import Price from './Components/Price';
 import BookNow from './Components/BookNow';
+import Empty from './Components/empty';
 
 function App() {
   const [language, setLanguage] = useState('english');
@@ -40,6 +41,7 @@ function App() {
       <MotionConfig reducedMotion="user">
         <Navbar onThemeChange={handleThemeChange} onLanguageChange={handleLanguageChange} />
         <Hero />
+        <Empty />
         <About />
         <Service />
         <Gallery />
