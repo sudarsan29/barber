@@ -14,7 +14,7 @@ const About = () => {
     <section id="about" className="py-16 b bg-gradient-to-br from-black via-gray-900 to-black">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Heading */}
-        <h2 className="text-3xl sm:text-4xl font-bold text-yellow-500 text-center mb-10">
+        <h2 className="text-3xl sm:text-4xl font-bold text-white-500 text-center mb-10">
           About PMC Barbershop
         </h2>
 
